@@ -811,7 +811,7 @@ export default function HomePage() {
                       <CheckCircle className="w-6 h-6 text-orange-600 mt-1 mr-3 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
                       <div>
                         <h3 className="font-semibold text-gray-900 transition-colors duration-300 group-hover:text-orange-600">
-                          ✅ {item.title}
+                          {item.title}
                         </h3>
                         <p className="text-gray-600">{item.description}</p>
                       </div>
