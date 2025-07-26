@@ -721,8 +721,8 @@ export default function HomePage() {
             <FadeInSection direction="right" className="relative">
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <Image
-                  src="/images/construction-team-meeting.png"
-                  alt="KBC Construction professional team at construction site"
+                  src="/images/construction-team-professionals.jpg"
+                  alt="KBC Construction professional team with hard hats and safety vests at construction site"
                   width={600}
                   height={400}
                   className="rounded-lg shadow-lg transition-transform duration-700 group-hover:scale-105"
