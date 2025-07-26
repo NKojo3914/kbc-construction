@@ -232,10 +232,10 @@ export default function HomePage() {
 
             <FadeInSection delay={800}>
               <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-                From land acquisition to construction completion, we provide comprehensive services to make your 
-                <span className="text-orange-400 font-semibold"> property dreams</span> a reality with 
-                <span className="text-orange-400 font-semibold"> transparent</span> and 
-                <span className="text-orange-400 font-semibold"> professional</span> service.
+                From luxury homes to commercial projects, we transform visions into reality with 
+                <span className="text-orange-400 font-semibold"> unmatched craftsmanship</span> and 
+                <span className="text-orange-400 font-semibold"> innovative design</span>.
+                Your dream home awaits.
               </p>
             </FadeInSection>
 
@@ -355,176 +355,177 @@ export default function HomePage() {
           <FadeInSection className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer a full range of reliable services in both land administration and construction to make 
-              land acquisition and construction simple, transparent, and stress-free for everyone.
+              We offer a full range of reliable services in both land administration and construction to make your 
+              property journey simple, transparent, and stress-free.
             </p>
           </FadeInSection>
 
           {/* Land & Property Services */}
-          <FadeInSection className="mb-16">
-            <div className="bg-green-50 rounded-2xl p-8 mb-12">
-              <div className="flex items-center mb-6">
-                <div className="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
-                <h3 className="text-2xl font-bold text-gray-900">Land & Property Services</h3>
+          <div className="mb-16">
+            <FadeInSection className="text-center mb-12">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 font-semibold mb-4">
+                🟢 Land & Property Services
               </div>
-              
-              <StaggerContainer className="grid md:grid-cols-2 gap-8" staggerDelay={200}>
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                  <CardHeader>
-                    <MapPin className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
-                      Land Search
-                    </CardTitle>
-                    <CardDescription>
-                      We assist clients in conducting thorough land title searches at the Lands Commission and other 
-                      relevant institutions to confirm rightful ownership and avoid land disputes.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+            </FadeInSection>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                  <CardHeader>
-                    <Target className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
-                      Survey & Demarcation
-                    </CardTitle>
-                    <CardDescription>
-                      Our licensed surveyors help you clearly mark and define the exact boundaries of your land to 
-                      ensure proper documentation and avoid future boundary issues.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={200}>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
+                    <span className="text-2xl">🔍</span>
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-orange-600 transition-colors duration-300">
+                    Land Search
+                  </CardTitle>
+                  <CardDescription className="text-sm">
+                    Thorough land title searches at the Lands Commission to confirm rightful ownership and avoid disputes.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                  <CardHeader>
-                    <CheckCircle className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
-                      Indenture & Documentation
-                    </CardTitle>
-                    <CardDescription>
-                      We prepare legally recognized indentures and other supporting documents needed for your 
-                      land transactions and registration.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
+                    <span className="text-2xl">📏</span>
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-orange-600 transition-colors duration-300">
+                    Survey & Demarcation
+                  </CardTitle>
+                  <CardDescription className="text-sm">
+                    Licensed surveyors help mark and define exact boundaries for proper documentation and future security.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                  <CardHeader>
-                    <Award className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
-                      Land Sales
-                    </CardTitle>
-                    <CardDescription>
-                      We offer genuine, litigation-free lands for sale in carefully selected, fast-developing 
-                      areas with flexible payment plans.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </StaggerContainer>
-            </div>
-          </FadeInSection>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
+                    <span className="text-2xl">📋</span>
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-orange-600 transition-colors duration-300">
+                    Indenture & Documentation
+                  </CardTitle>
+                  <CardDescription className="text-sm">
+                    Preparation of legally recognized indentures and supporting documents for land transactions and registration.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
+                    <span className="text-2xl">🏡</span>
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-orange-600 transition-colors duration-300">
+                    Land Sales
+                  </CardTitle>
+                  <CardDescription className="text-sm">
+                    Genuine, litigation-free lands in fast-developing areas with flexible payment plans.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </StaggerContainer>
+          </div>
 
           {/* General Construction Services */}
-          <FadeInSection>
-            <div className="bg-orange-50 rounded-2xl p-8">
-              <div className="flex items-center mb-6">
-                <div className="w-4 h-4 bg-orange-500 rounded-full mr-3"></div>
-                <h3 className="text-2xl font-bold text-gray-900">General Construction Services</h3>
+          <div>
+            <FadeInSection className="text-center mb-12">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 font-semibold mb-4">
+                🟢 General Construction Services
               </div>
-              <p className="text-lg text-gray-600 mb-8">
-                At the core of our business is construction. We handle everything from concept to completion:
-              </p>
-              
-              <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src="/images/contemporary-house-dawn.png"
-                      alt="Residential and commercial building construction"
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  </div>
-                  <CardHeader>
-                    <Building className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                      Residential & Commercial Building
-                    </CardTitle>
-                    <CardDescription>
-                      Houses, offices, schools, shops, and other structures built to the highest standards.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+            </FadeInSection>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src="/images/architectural-model-creation.png"
-                      alt="Architectural and structural designs"
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  </div>
-                  <CardHeader>
-                    <Target className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                      Architectural & Structural Designs
-                    </CardTitle>
-                    <CardDescription>
-                      Modern and functional building plans tailored to your specific needs and preferences.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/architectural-model-assembly.png"
+                    alt="Residential and Commercial Building Construction"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                </div>
+                <CardHeader>
+                  <Building className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                    Residential & Commercial Building
+                  </CardTitle>
+                  <CardDescription>
+                    Complete construction of houses, offices, schools, shops, and other structures from concept to completion.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src="/images/construction-workers.png"
-                      alt="Renovation and remodeling projects"
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  </div>
-                  <CardHeader>
-                    <HardHat className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                      Renovation & Remodeling
-                    </CardTitle>
-                    <CardDescription>
-                      Transform your existing spaces with professional renovation and remodeling services.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/architectural-model-creation.png"
+                    alt="Architectural & Structural Designs"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                </div>
+                <CardHeader>
+                  <Award className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                    Architectural & Structural Designs
+                  </CardTitle>
+                  <CardDescription>
+                    Modern and functional building plans tailored to your specific needs and preferences.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                  <CardHeader>
-                    <Users className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                      Construction Supervision & Project Management
-                    </CardTitle>
-                    <CardDescription>
-                      Professional oversight and management to ensure your project is completed on time and within budget.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/construction-workers.png"
+                    alt="Renovation & Remodeling Projects"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                </div>
+                <CardHeader>
+                  <HardHat className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                    Renovation & Remodeling
+                  </CardTitle>
+                  <CardDescription>
+                    Transform existing spaces with professional renovation and remodeling services.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </StaggerContainer>
 
-                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group md:col-span-2 lg:col-span-1">
-                  <CardHeader>
-                    <CheckCircle className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                      Building Permits & Regulatory Compliance
-                    </CardTitle>
-                    <CardDescription>
-                      Support with obtaining building permits and ensuring compliance with all regulatory requirements.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </StaggerContainer>
-            </div>
-          </FadeInSection>
+            <StaggerContainer className="grid md:grid-cols-2 gap-8 mt-8" staggerDelay={200}>
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader className="text-center">
+                  <Target className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                    Construction Supervision & Project Management
+                  </CardTitle>
+                  <CardDescription>
+                    Professional oversight ensuring your project stays on schedule, within budget, and meets quality standards.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader className="text-center">
+                  <CheckCircle className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                    Building Permits & Regulatory Compliance
+                  </CardTitle>
+                  <CardDescription>
+                    Complete support with building permits and ensuring all regulatory requirements are met.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </StaggerContainer>
+          </div>
         </div>
       </section>
 
@@ -697,29 +698,23 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About KBC Construction and Properties</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               KBC Construction and Properties is a trusted Ghanaian company dedicated to delivering top-quality services 
-              in land and property solutions as well as general construction. We aim to make land acquisition and 
-              construction simple, transparent, and stress-free for everyone.
+              in land and property solutions as well as general construction.
             </p>
           </FadeInSection>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <FadeInSection direction="left">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Who We Serve</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Whether you are an <span className="font-semibold text-orange-600">individual</span> looking for your dream home, 
-                an <span className="font-semibold text-orange-600">investor</span> seeking profitable opportunities, 
-                a <span className="font-semibold text-orange-600">developer</span> planning a major project, or 
-                an <span className="font-semibold text-orange-600">institution</span> requiring specialized construction services, 
-                we have the expertise and experience to meet your needs.
+                We aim to make land acquisition and construction simple, transparent, and stress-free for everyone 
+                whether you are an individual, investor, developer, or institution.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our comprehensive approach combines land services with construction expertise, providing you with a one-stop 
-                solution for all your property needs. From finding the perfect plot of land to building your dream structure, 
-                we guide you through every step of the process.
+                At the core of our business is construction. We handle everything from concept to completion, 
+                ensuring that every project meets the highest standards of quality and craftsmanship.
               </p>
               <p className="text-lg text-gray-600">
-                <span className="font-semibold text-gray-900">Our commitment:</span> Let's help you build your dream property 
-                the right way from the land to the last brick!
+                Let's help you build your dream property the right way - from the land to the last brick!
               </p>
             </FadeInSection>
 
@@ -737,75 +732,39 @@ export default function HomePage() {
             </FadeInSection>
           </div>
 
-          <FadeInSection className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Why Choose KBC Construction and Properties?</h3>
-            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
-              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                <CardHeader>
-                  <CheckCircle className="w-12 h-12 text-green-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
-                    Trusted & Transparent
-                  </CardTitle>
-                  <CardDescription>
-                    We maintain complete transparency in all our dealings, ensuring you have full visibility into 
-                    your project from start to finish.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+          <StaggerContainer className="grid md:grid-cols-3 gap-8" staggerDelay={200}>
+            <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+              <CardHeader>
+                <Users className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">Professional Team</CardTitle>
+                <CardDescription>
+                  Experienced professionals with deep expertise in land administration, construction, and project management.
+                </CardDescription>
+              </CardHeader>
+            </Card>
 
-              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                <CardHeader>
-                  <Users className="w-12 h-12 text-blue-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="transition-colors duration-300 group-hover:text-blue-600">
-                    Professional & Experienced Team
-                  </CardTitle>
-                  <CardDescription>
-                    Our team of qualified professionals brings years of experience in both land administration 
-                    and construction services.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+            <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+              <CardHeader>
+                <Target className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                  Our Approach
+                </CardTitle>
+                <CardDescription>
+                  Comprehensive solutions covering both land acquisition and construction to provide a seamless experience.
+                </CardDescription>
+              </CardHeader>
+            </Card>
 
-              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                <CardHeader>
-                  <Target className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                    Timely Delivery
-                  </CardTitle>
-                  <CardDescription>
-                    We understand the importance of time in construction projects and land transactions, 
-                    ensuring prompt service delivery.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-
-              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-                <CardHeader>
-                  <Award className="w-12 h-12 text-purple-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="transition-colors duration-300 group-hover:text-purple-600">
-                    Affordable & Flexible Services
-                  </CardTitle>
-                  <CardDescription>
-                    We offer competitive pricing with flexible payment plans to make our services accessible 
-                    to clients across different budget ranges.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-
-              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group md:col-span-2 lg:col-span-1">
-                <CardHeader>
-                  <Heart className="w-12 h-12 text-red-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="transition-colors duration-300 group-hover:text-red-600">
-                    Quality & Client Satisfaction
-                  </CardTitle>
-                  <CardDescription>
-                    We are focused on delivering quality work and ensuring complete client satisfaction in every 
-                    project we undertake.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </StaggerContainer>
-          </FadeInSection>
+            <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+              <CardHeader>
+                <Heart className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">Client Focus</CardTitle>
+                <CardDescription>
+                  Dedicated to making your property journey simple, transparent, and stress-free from start to finish.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </StaggerContainer>
         </div>
       </section>
 
@@ -815,29 +774,36 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <FadeInSection direction="left">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose KBC for Your Home in Ghana?
+                Why Choose KBC Construction and Properties?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                As a growing Ghanaian construction company, we provide personalized service and attention that larger
-                firms can't match. Every project gets our full dedication, whether in Accra, Kumasi, or anywhere in
-                Ghana.
+                We combine expertise in both land administration and construction to provide comprehensive, 
+                reliable solutions that make your property journey seamless and successful.
               </p>
 
               <div className="space-y-4">
                 {[
                   {
-                    title: "Local Expertise",
+                    title: "Trusted & Transparent",
                     description:
-                      "Deep understanding of Ghana's building codes, permits, and regional requirements across all major cities.",
+                      "We believe in honest communication and transparent processes throughout every project and transaction.",
                   },
                   {
-                    title: "Quality Materials",
+                    title: "Professional & Experienced Team",
                     description:
-                      "We source the best materials available in Ghana without compromising on craftsmanship quality.",
+                      "Our team brings years of expertise in land administration, construction, and project management.",
                   },
                   {
-                    title: "Nationwide Service",
-                    description: "From Accra to Kumasi, Takoradi to Tamale - we bring our expertise to your location.",
+                    title: "Timely Delivery",
+                    description: "We respect your time and ensure projects are completed on schedule without compromising quality.",
+                  },
+                  {
+                    title: "Affordable & Flexible Services",
+                    description: "Competitive pricing with flexible payment plans to suit your budget and financial needs.",
+                  },
+                  {
+                    title: "Quality & Client Satisfaction",
+                    description: "Our focus on quality craftsmanship and client satisfaction drives everything we do.",
                   },
                 ].map((item, index) => (
                   <FadeInSection key={item.title} delay={index * 200}>
@@ -845,7 +811,7 @@ export default function HomePage() {
                       <CheckCircle className="w-6 h-6 text-orange-600 mt-1 mr-3 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
                       <div>
                         <h3 className="font-semibold text-gray-900 transition-colors duration-300 group-hover:text-orange-600">
-                          {item.title}
+                          ✅ {item.title}
                         </h3>
                         <p className="text-gray-600">{item.description}</p>
                       </div>
