@@ -232,10 +232,10 @@ export default function HomePage() {
 
             <FadeInSection delay={800}>
               <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-                From luxury homes to commercial projects, we transform visions into reality with 
-                <span className="text-orange-400 font-semibold"> unmatched craftsmanship</span> and 
-                <span className="text-orange-400 font-semibold"> innovative design</span>.
-                Your dream home awaits.
+                From land acquisition to construction completion, we provide comprehensive services to make your 
+                <span className="text-orange-400 font-semibold"> property dreams</span> a reality with 
+                <span className="text-orange-400 font-semibold"> transparent</span> and 
+                <span className="text-orange-400 font-semibold"> professional</span> service.
               </p>
             </FadeInSection>
 
@@ -353,77 +353,178 @@ export default function HomePage() {
       <section id="services" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Residential Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From dream homes to property improvements, we provide comprehensive residential construction solutions
-              tailored to your lifestyle and budget across Ghana.
+              We offer a full range of reliable services in both land administration and construction to make 
+              land acquisition and construction simple, transparent, and stress-free for everyone.
             </p>
           </FadeInSection>
 
-          <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
-            <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="/images/architectural-model-assembly.png"
-                  alt="Custom home building in Ghana"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          {/* Land & Property Services */}
+          <FadeInSection className="mb-16">
+            <div className="bg-green-50 rounded-2xl p-8 mb-12">
+              <div className="flex items-center mb-6">
+                <div className="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                <h3 className="text-2xl font-bold text-gray-900">Land & Property Services</h3>
               </div>
-              <CardHeader>
-                <Building className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                  Custom Home Building
-                </CardTitle>
-                <CardDescription>
-                  Design and build your perfect family home with personalized attention to every detail.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+              
+              <StaggerContainer className="grid md:grid-cols-2 gap-8" staggerDelay={200}>
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                  <CardHeader>
+                    <MapPin className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
+                      Land Search
+                    </CardTitle>
+                    <CardDescription>
+                      We assist clients in conducting thorough land title searches at the Lands Commission and other 
+                      relevant institutions to confirm rightful ownership and avoid land disputes.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="/images/construction-workers.png"
-                  alt="Home renovation in Ghana"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              </div>
-              <CardHeader>
-                <HardHat className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                  Home Renovations
-                </CardTitle>
-                <CardDescription>
-                  Transform your existing space with kitchen remodels, bathroom upgrades, and whole-home renovations.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                  <CardHeader>
+                    <Target className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
+                      Survey & Demarcation
+                    </CardTitle>
+                    <CardDescription>
+                      Our licensed surveyors help you clearly mark and define the exact boundaries of your land to 
+                      ensure proper documentation and avoid future boundary issues.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="/images/architectural-model-creation.png"
-                  alt="Property development in Ghana"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                  <CardHeader>
+                    <CheckCircle className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
+                      Indenture & Documentation
+                    </CardTitle>
+                    <CardDescription>
+                      We prepare legally recognized indentures and other supporting documents needed for your 
+                      land transactions and registration.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                  <CardHeader>
+                    <Award className="w-12 h-12 text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
+                      Land Sales
+                    </CardTitle>
+                    <CardDescription>
+                      We offer genuine, litigation-free lands for sale in carefully selected, fast-developing 
+                      areas with flexible payment plans.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </StaggerContainer>
+            </div>
+          </FadeInSection>
+
+          {/* General Construction Services */}
+          <FadeInSection>
+            <div className="bg-orange-50 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-4 h-4 bg-orange-500 rounded-full mr-3"></div>
+                <h3 className="text-2xl font-bold text-gray-900">General Construction Services</h3>
               </div>
-              <CardHeader>
-                <Award className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                  Property Development
-                </CardTitle>
-                <CardDescription>
-                  Residential lot development and investment properties for growing families and investors.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </StaggerContainer>
+              <p className="text-lg text-gray-600 mb-8">
+                At the core of our business is construction. We handle everything from concept to completion:
+              </p>
+              
+              <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src="/images/contemporary-house-dawn.png"
+                      alt="Residential and commercial building construction"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
+                  <CardHeader>
+                    <Building className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                      Residential & Commercial Building
+                    </CardTitle>
+                    <CardDescription>
+                      Houses, offices, schools, shops, and other structures built to the highest standards.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src="/images/architectural-model-creation.png"
+                      alt="Architectural and structural designs"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
+                  <CardHeader>
+                    <Target className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                      Architectural & Structural Designs
+                    </CardTitle>
+                    <CardDescription>
+                      Modern and functional building plans tailored to your specific needs and preferences.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src="/images/construction-workers.png"
+                      alt="Renovation and remodeling projects"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
+                  <CardHeader>
+                    <HardHat className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                      Renovation & Remodeling
+                    </CardTitle>
+                    <CardDescription>
+                      Transform your existing spaces with professional renovation and remodeling services.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                  <CardHeader>
+                    <Users className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                      Construction Supervision & Project Management
+                    </CardTitle>
+                    <CardDescription>
+                      Professional oversight and management to ensure your project is completed on time and within budget.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+
+                <Card className="hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group md:col-span-2 lg:col-span-1">
+                  <CardHeader>
+                    <CheckCircle className="w-12 h-12 text-orange-600 mb-4 transition-transform duration-300 group-hover:scale-110" />
+                    <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                      Building Permits & Regulatory Compliance
+                    </CardTitle>
+                    <CardDescription>
+                      Support with obtaining building permits and ensuring compliance with all regulatory requirements.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </StaggerContainer>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
@@ -593,30 +694,32 @@ export default function HomePage() {
       <section id="about" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About KBC Construction & Properties</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Founded with a passion for creating beautiful homes across Ghana, we're a growing Ghanaian construction
-              company dedicated to bringing your vision to life.
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About KBC Construction and Properties</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              KBC Construction and Properties is a trusted Ghanaian company dedicated to delivering top-quality services 
+              in land and property solutions as well as general construction. We aim to make land acquisition and 
+              construction simple, transparent, and stress-free for everyone.
             </p>
           </FadeInSection>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <FadeInSection direction="left">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Who We Serve</h3>
               <p className="text-lg text-gray-600 mb-6">
-                KBC Construction & Properties was founded in Ghana with a simple mission: to build exceptional homes
-                that Ghanaian families love to live in. As a startup in the construction industry, we bring fresh
-                energy, innovative approaches, and personalized attention to every project.
+                Whether you are an <span className="font-semibold text-orange-600">individual</span> looking for your dream home, 
+                an <span className="font-semibold text-orange-600">investor</span> seeking profitable opportunities, 
+                a <span className="font-semibold text-orange-600">developer</span> planning a major project, or 
+                an <span className="font-semibold text-orange-600">institution</span> requiring specialized construction services, 
+                we have the expertise and experience to meet your needs.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our team combines years of construction experience with a passion for modern design and sustainable
-                building practices. We believe that every family in Ghana deserves a home that reflects their unique
-                style and meets their specific needs.
+                Our comprehensive approach combines land services with construction expertise, providing you with a one-stop 
+                solution for all your property needs. From finding the perfect plot of land to building your dream structure, 
+                we guide you through every step of the process.
               </p>
               <p className="text-lg text-gray-600">
-                From our first custom home to our latest projects, we've maintained our commitment to quality
-                craftsmanship, transparent communication, and exceptional customer service throughout Ghana - from Accra
-                to Kumasi and beyond.
+                <span className="font-semibold text-gray-900">Our commitment:</span> Let's help you build your dream property 
+                the right way from the land to the last brick!
               </p>
             </FadeInSection>
 
@@ -634,42 +737,75 @@ export default function HomePage() {
             </FadeInSection>
           </div>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8" staggerDelay={200}>
-            <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-              <CardHeader>
-                <Users className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">Our Team</CardTitle>
-                <CardDescription>
-                  Experienced Ghanaian professionals passionate about creating beautiful, functional homes for families
-                  across Ghana.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+          <FadeInSection className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Why Choose KBC Construction and Properties?</h3>
+            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" staggerDelay={200}>
+              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader>
+                  <CheckCircle className="w-12 h-12 text-green-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-green-600">
+                    Trusted & Transparent
+                  </CardTitle>
+                  <CardDescription>
+                    We maintain complete transparency in all our dealings, ensuring you have full visibility into 
+                    your project from start to finish.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-            <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-              <CardHeader>
-                <Target className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
-                  Our Mission
-                </CardTitle>
-                <CardDescription>
-                  To build exceptional homes across Ghana that exceed expectations while providing personalized,
-                  transparent service.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader>
+                  <Users className="w-12 h-12 text-blue-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-blue-600">
+                    Professional & Experienced Team
+                  </CardTitle>
+                  <CardDescription>
+                    Our team of qualified professionals brings years of experience in both land administration 
+                    and construction services.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-            <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
-              <CardHeader>
-                <Heart className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
-                <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">Our Values</CardTitle>
-                <CardDescription>
-                  Quality craftsmanship, honest communication, and building lasting relationships with our clients
-                  throughout Ghana.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </StaggerContainer>
+              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader>
+                  <Target className="w-12 h-12 text-orange-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-orange-600">
+                    Timely Delivery
+                  </CardTitle>
+                  <CardDescription>
+                    We understand the importance of time in construction projects and land transactions, 
+                    ensuring prompt service delivery.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group">
+                <CardHeader>
+                  <Award className="w-12 h-12 text-purple-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-purple-600">
+                    Affordable & Flexible Services
+                  </CardTitle>
+                  <CardDescription>
+                    We offer competitive pricing with flexible payment plans to make our services accessible 
+                    to clients across different budget ranges.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group md:col-span-2 lg:col-span-1">
+                <CardHeader>
+                  <Heart className="w-12 h-12 text-red-600 mb-4 mx-auto transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="transition-colors duration-300 group-hover:text-red-600">
+                    Quality & Client Satisfaction
+                  </CardTitle>
+                  <CardDescription>
+                    We are focused on delivering quality work and ensuring complete client satisfaction in every 
+                    project we undertake.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </StaggerContainer>
+          </FadeInSection>
         </div>
       </section>
 
