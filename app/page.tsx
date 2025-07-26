@@ -157,89 +157,162 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-[600px] bg-gray-900 overflow-hidden">
+      <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden">
+        {/* Animated Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-transparent"></div>
+          <div className="absolute top-0 left-0 w-full h-full opacity-20">
+            <div className="w-full h-full bg-gradient-to-br from-orange-400/10 via-transparent to-transparent animate-pulse"></div>
+          </div>
+        </div>
+
         {/* Background Images Slideshow */}
         <div className="absolute inset-0">
           {heroImages.map((image, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 transition-all duration-2000 ease-in-out ${
+                index === currentSlide ? "opacity-60 scale-100" : "opacity-0 scale-105"
               }`}
-              style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+              style={{ transform: `translateY(${scrollY * 0.2}px)` }}
             >
               <Image
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
                 fill
-                className="object-cover object-center"
+                className="object-cover object-center transition-transform duration-[20s] ease-out"
                 priority={index === 0}
                 style={{
                   objectPosition: "center center",
+                  transform: index === currentSlide ? "scale(1.05)" : "scale(1)",
                 }}
               />
-              <div className="absolute inset-0 bg-black/20"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
             </div>
           ))}
         </div>
 
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
-          {heroImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide ? "bg-orange-600 scale-125" : "bg-white/50 hover:bg-white/75"
-              }`}
-            />
-          ))}
-        </div>
+        {/* Decorative Elements */}
+        <div className="absolute top-1/4 right-10 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-10 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
         {/* Hero Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center z-10">
-          <div className="max-w-3xl">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center z-10">
+          <div className="max-w-4xl">
             <FadeInSection delay={200}>
-              <Badge className="mb-4 bg-orange-600 hover:bg-orange-700 transform transition-all duration-300 hover:scale-105">
-                Ghana's Trusted Home Building Partner
-              </Badge>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-600/90 to-orange-500/90 backdrop-blur-sm border border-orange-400/30 mb-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25">
+                <Award className="w-4 h-4 mr-2 text-white" />
+                <span className="text-white font-semibold text-sm tracking-wide">
+                  Ghana's Trusted Home Building Partner
+                </span>
+              </div>
             </FadeInSection>
 
             <FadeInSection delay={400}>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Building Your Dream Home
-                <span className="text-orange-400 block">Across Ghana</span>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
+                <span className="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
+                  You Dream It,
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent animate-pulse">
+                  We Build It
+                </span>
               </h1>
             </FadeInSection>
 
             <FadeInSection delay={600}>
-              <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-                KBC Construction & Properties is a leading Ghanaian construction company specializing in residential
-                construction and property development. From custom homes to renovations, we bring your vision to life
-                with personalized service and exceptional craftsmanship throughout Ghana.
-              </p>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-0.5 bg-gradient-to-r from-orange-500 to-transparent mr-4"></div>
+                <p className="text-xl md:text-2xl text-gray-300 font-light italic">
+                  Crafting Dreams Across Ghana
+                </p>
+              </div>
             </FadeInSection>
 
             <FadeInSection delay={800}>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                From luxury homes to commercial projects, we transform visions into reality with 
+                <span className="text-orange-400 font-semibold"> unmatched craftsmanship</span> and 
+                <span className="text-orange-400 font-semibold"> innovative design</span>.
+                Your dream home awaits.
+              </p>
+            </FadeInSection>
+
+            <FadeInSection delay={1000}>
+              <div className="flex flex-col sm:flex-row gap-6 mb-12">
                 <Button
                   size="lg"
-                  className="bg-orange-600 hover:bg-orange-700 transform transition-all duration-300 hover:scale-105 hover:shadow-xl group"
+                  className="px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white font-semibold rounded-full shadow-2xl shadow-orange-500/30 transform transition-all duration-300 hover:scale-105 hover:shadow-orange-500/50 group border-0"
                   onClick={(e) => smoothScroll(e as any, "projects")}
                 >
-                  View Our Projects
-                  <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  <Building className="mr-3 w-5 h-5" />
+                  Explore Our Projects
+                  <ArrowRight className="ml-3 w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" />
                 </Button>
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-gray-900 bg-transparent transform transition-all duration-300 hover:scale-105 group"
+                  className="px-8 py-4 bg-transparent border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm rounded-full transform transition-all duration-300 hover:scale-105 hover:border-orange-400/50 hover:shadow-xl group"
                 >
-                  <Phone className="mr-2 w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
-                  Call +233 55 769 0525
+                  <Phone className="mr-3 w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+                  Get Free Quote
+                  <span className="ml-2 text-orange-400">+233 55 769 0525</span>
                 </Button>
               </div>
             </FadeInSection>
+
+            {/* Quick Stats */}
+            <FadeInSection delay={1200}>
+              <div className="grid grid-cols-3 gap-8 max-w-2xl">
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-1">
+                    <AnimatedCounter end={500} suffix="+" />
+                  </div>
+                  <p className="text-gray-400 text-sm font-medium">Projects Completed</p>
+                </div>
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-1">
+                    <AnimatedCounter end={15} suffix="+" />
+                  </div>
+                  <p className="text-gray-400 text-sm font-medium">Years Experience</p>
+                </div>
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-1">
+                    <AnimatedCounter end={100} suffix="%" />
+                  </div>
+                  <p className="text-gray-400 text-sm font-medium">Client Satisfaction</p>
+                </div>
+              </div>
+            </FadeInSection>
+          </div>
+        </div>
+
+        {/* Enhanced Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="flex items-center space-x-3 bg-black/20 backdrop-blur-md rounded-full px-4 py-2 border border-white/10">
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`relative w-2 h-2 rounded-full transition-all duration-500 ${
+                  index === currentSlide 
+                    ? "bg-orange-500 shadow-lg shadow-orange-500/50 scale-150" 
+                    : "bg-white/40 hover:bg-white/60 hover:scale-125"
+                }`}
+              >
+                {index === currentSlide && (
+                  <div className="absolute inset-0 rounded-full bg-orange-400 animate-ping opacity-75"></div>
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+          <div className="flex flex-col items-center text-white/60">
+            <span className="text-xs font-medium mb-2 tracking-widest">SCROLL</span>
+            <div className="w-0.5 h-8 bg-gradient-to-b from-white/60 to-transparent"></div>
           </div>
         </div>
       </section>
