@@ -6,6 +6,11 @@
   .text-balance {
     text-wrap: balance;
   }
+  
+  .project-request-dropdown {
+    z-index: 9999999 !important;
+    position: absolute !important;
+  }
 }
 
 @layer base {
