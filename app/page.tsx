@@ -125,7 +125,7 @@ export default function HomePage() {
 I am interested in getting a free estimate for a construction project. Please contact me to discuss the details.
 
 Thank you,`)
-    window.location.href = `mailto:info@kbcproperties.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:calebkyerematengbonsu@gmail.com?subject=${subject}&body=${body}`
   }
 
   const handleWhatsAppClick = () => {
@@ -878,7 +878,7 @@ Thank you,`)
           <StaggerContainer className="grid md:grid-cols-3 gap-8 mb-12" staggerDelay={200}>
             {[
               { icon: Phone, title: "Call Us", info: "+233 55 769 0525" },
-              { icon: Mail, title: "Email Us", info: "info@kbcproperties.com" },
+              { icon: Mail, title: "Email Us", info: "calebkyerematengbonsu@gmail.com" },
               { icon: MapPin, title: "Head Office", info: "Daban New Site\nKumasi, Ghana" },
             ].map((contact, index) => (
               <div key={contact.title} className="text-center group">
@@ -959,7 +959,7 @@ Thank you,`)
               },
               {
                 title: "Contact",
-                links: ["+233 55 769 0525", "info@kbcproperties.com", "Head Office: Daban New Site", "Kumasi, Ghana"],
+                links: ["+233 55 769 0525", "calebkyerematengbonsu@gmail.com", "Head Office: Daban New Site", "Kumasi, Ghana"],
               },
             ].map((section) => (
               <div key={section.title}>
